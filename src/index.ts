@@ -1,7 +1,5 @@
-// 例題）
-// 年齢が20歳以上の場合は、Sakeと出力.
-// 年齢が20歳未満の場合は、Colaと出力.
+const getRectangle = (height: number, width: number = 10) => {
+  return height * width;
+};
 
-const age = 19;
-const drink = (age >= 20) ? 'Sake' : 'Cola';
-console.log(drink);
+console.log(getRectangle(3, 5));
