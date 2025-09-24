@@ -1,5 +1,6 @@
 "use strict";
-const getRectangle = (height, width = 10) => {
-    return height * width;
-};
-console.log(getRectangle(3, 5));
+let user = ['Liam', 20, 'Tokyo'];
+console.log(user[0]);
+console.log(user[1]);
+console.log(user[2]);
+user = ['Olivia', 21, 'Osaka'];
