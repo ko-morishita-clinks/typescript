@@ -1,7 +1,10 @@
-let user: [string, number, string] = ['Liam', 20, 'Tokyo'];
+const scores = [100, 90, 80, 70, 60];
+let sum = 0;
+for(let i = 0; i < scores.length; i++) {
+  sum += scores[i];
+}
 
-console.log(user[0]);
-console.log(user[1]);
-console.log(user[2]);
+const average = sum / scores.length;
 
-user = ['Olivia', 21, 'Osaka'];
+console.log(`sum: ${sum}`);
+console.log(`average: ${average}`);

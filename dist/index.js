@@ -1,6 +1,9 @@
 "use strict";
-let user = ['Liam', 20, 'Tokyo'];
-console.log(user[0]);
-console.log(user[1]);
-console.log(user[2]);
-user = ['Olivia', 21, 'Osaka'];
+const scores = [100, 90, 80, 70, 60];
+let sum = 0;
+for (let i = 0; i < scores.length; i++) {
+    sum += scores[i];
+}
+const average = sum / scores.length;
+console.log(`sum: ${sum}`);
+console.log(`average: ${average}`);
