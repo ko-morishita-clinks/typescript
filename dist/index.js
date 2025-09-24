@@ -1,9 +1,29 @@
 "use strict";
-const scores = [100, 90, 80, 70, 60];
-let sum = 0;
-for (let i = 0; i < scores.length; i++) {
-    sum += scores[i];
+class User {
+    name = '';
+    age = 0;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    isAdult() {
+        return this.age >= 18;
+    }
 }
-const average = sum / scores.length;
-console.log(`sum: ${sum}`);
-console.log(`average: ${average}`);
+class AdminUser extends User {
+    adminRole = 1;
+    constructor(name, age, adminRole) {
+        super(name, age);
+        this.adminRole = adminRole;
+    }
+    sayAdminRole() {
+        console.log(`My adminRole is ${this.adminRole}`);
+    }
+    isAdult() {
+        return true;
+    }
+}
+const emma = new AdminUser('Emma', 0, 2);
+console.log(emma.name);
+emma.sayAdminRole();
+console.log(emma.isAdult());
